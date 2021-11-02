@@ -11,7 +11,7 @@ pipeline {
             steps {
                  script {
                     echo 'Testing..'
-                    mvn compile
+                    sh 'mvn compile'
                 }
             }
         }
