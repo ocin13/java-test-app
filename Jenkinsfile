@@ -10,9 +10,8 @@ pipeline {
         stage('Test') {
             steps {
                  script {
-            
                     echo 'Testing..'
-                    java JavaApplication
+                    mvn compile
                 }
             }
         }
