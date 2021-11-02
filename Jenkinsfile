@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'java -version'
-                sh 'git -version'
+               cd src/main/java/
             }
         }
         stage('Test') {
