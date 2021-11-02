@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh 'java src/main/java/JavaApplication.java'
             }
         }
         stage('Deploy') {
