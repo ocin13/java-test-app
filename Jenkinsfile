@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat "cd src/main/java  javac JavaApplication.java java JavaApplication"
+                bat "cd src"
+                bat "cd main"
+                bat "cd java
+                bat "javac JavaApplication.java"
+                bat "java JavaApplication"
             }
         }
         stage('Test') {
