@@ -9,10 +9,12 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-                cd src/main/java/
-                javac JavaApplication.java
-                java JavaApplication
+                 script {
+                    echo 'Testing..'
+                    cd src/main/java/
+                    javac JavaApplication.java
+                    java JavaApplication
+                }
             }
         }
         stage('Deploy') {
