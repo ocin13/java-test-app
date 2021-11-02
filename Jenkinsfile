@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                directory('src/main/java'){
+                dir('src/main/java'){
                     bat 'javac JavaApplication.java'
                     bat 'java JavaApplication'
                 }
