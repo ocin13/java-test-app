@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
         
-                    sh "cd src/main/java/ "
+                    sh "cd C:\Users\15512\.jenkins\workspace\test-pipelinesrc\main\java "
                 
             }
         }
