@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               echo 'dir'  
+               sh 'java JavaApplication'  
             }
         }
         stage('Test') {
