@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('src'){
-                    sh 'pwd'
-                }
+                sh 'cd src'
             }
         }
         stage('Test') {
