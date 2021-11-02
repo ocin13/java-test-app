@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh " ls " 
+                withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']){
+                      sh " ls " 
+                }
             }
         }
         stage('Test') {
