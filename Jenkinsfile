@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script{
-                    cd src/main/java/
-                }
+        
+                    sh "cd src/main/java/ "
+                
             }
         }
         stage('Test') {
