@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd C:\Users\15512\.jenkins\workspace\test-pipeline'
+                bat 'cd src'
             }
         }
         stage('Test') {
