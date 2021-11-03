@@ -1,13 +1,14 @@
 pipeline {
     agent any
+    tools{
+        maven 'maven'
+        jdk 'java'
+    }
 
     stages {
         stage('Build') {
             steps {
-                dir('src/main/java'){
-                    bat 'javac JavaApplication.java'
-                    bat 'java JavaApplication'
-                }
+                    bat 'mvn clean'
             }
         }
         stage('Test') {
